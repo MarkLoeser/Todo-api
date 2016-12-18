@@ -15,8 +15,7 @@ app.use(bodyParser.json());
 app.get('/todos', function (req, res) {
 	var query = req.query;
 	var where = {};
-<<<<<<< HEAD
-=======
+
 
 	if (query.hasOwnProperty('completed') && query.completed === 'true') {
 		where.completed = true;
