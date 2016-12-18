@@ -15,6 +15,8 @@ app.use(bodyParser.json());
 app.get('/todos', function (req, res) {
 	var query = req.query;
 	var where = {};
+<<<<<<< HEAD
+=======
 
 	if (query.hasOwnProperty('completed') && query.completed === 'true') {
 		where.completed = true;
@@ -33,7 +35,7 @@ app.get('/todos', function (req, res) {
 	}, function (e) {
 		res.status(500).send();
 	});
-	
+
 });
 
 //GET /todos/:id  todos/3
